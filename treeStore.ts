@@ -1,4 +1,4 @@
- class TreeStore {
+ export class TreeStore {
     private items: Item[];
     private itemMap: Map<number | string, Item>;
     private childrenMap: Map<number | string, Item[]>;
@@ -62,7 +62,7 @@
     }
 }
 
-interface Item {
+export interface Item {
     id: number | string;
     parent: number | string;
     type?: string | null;
